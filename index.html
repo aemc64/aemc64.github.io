@@ -4,120 +4,157 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andrés Mayo - Game Developer</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      li {
-        margin-left: 20px;
-      }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.7/dist/cyborg/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="py-3 my-4"></header>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container col col-lg-10">
+        <span class="navbar-brand">
+          <h2 class="fw-bold">Andrés Mayo</h2>
+          <h5>Game Developer</h5>
+        </span>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/aemc64/">Linkedin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:aemc.64@gmail.com">Mail</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" target="_blank" href="https://drive.google.com/file/d/1YToc8WYbw0K6DgeFevVwWJBtwO9r5MZc/edit">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container col col-lg-10">
       <div class="row">
-        <div class="col col-lg-9 mx-auto">
-          <div class="row mb-3">
-            <h1 class="fw-bolder">Andrés Mayo</h1>
-            <h4>Game Developer</h4>
-          </div>
-          <div class="row mb-3">
-            <p>Email: <a href="mailto:aemc.64@gmail.com">aemc.64@gmail.com</a></p>
-            <p>Linkedin: <a href="https://www.linkedin.com/in/aemc64/">linkedin.com/in/aemc64/</a></p>
-            <p>Resume: <a href="https://drive.google.com/file/d/1YToc8WYbw0K6DgeFevVwWJBtwO9r5MZc/">Download</a></p>
-          </div>
-          <div class="row mb-3">
-            <h3>About me</h3>
-            <p>
-              Hello! I'm Andrés, a game developer with a passion for gameplay. I've been working on game development since 2016, using Unity, C#, and other tools. Lately, I've been exploring Unreal and C++. I enjoy diving into concept and game design, love prototyping gameplay ideas, and occasionally participate in game jams.
-            </p>
-          </div>
-          <div class="row mb-3">
-            <h3>Skills</h3>
-            <ul>
-              <li><span class="fw-bold text-primary">Programming:</span> C#, .NET, C++, Blueprints.</li>
-              <li><span class="fw-bold text-primary">Engines:</span> Unity, Unreal Engine.</li>
-              <li><span class="fw-bold text-primary">Unity:</span> Gameplay, UI, Animation, AI, ScriptableObjects, Addressables, Cinemachine, Timeline.</li>
-              <li><span class="fw-bold text-primary">Plugins:</span> Rewired, PlayFab, Photon Quantum, NodeCanvas, I2 Localization, DoTween, FMOD.</li>
-              <li><span class="fw-bold text-primary">Other tools:</span> Git, Perforce, Visual Studio, Rider, JSON, Jenkins, Jira, Confluence.</li>
-            </ul>
-          </div>
-          <div class="row mb-3">
-            <h3>Experience</h3>
-          </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">NFL Clash</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/yBV4d7btZy0" allowfullscreen></iframe>
+        <h4>Projects</h4>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/dragonfire.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Game of Thrones: Dragonfire (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.wb.goog.hotd.socialstrategy" class="btn btn-primary">Google Play</a>
+              </div>
             </div>
-            <p>NFL Clash is a card-based American football game where players build a roster of their favorite NFL athletes.</p>
-            <ul>
-              <li>Worked closely with game designers on implementing the core gameplay systems: American football rules, unit behaviors, playfield grid system, and touch-based input actions.</li>
-              <li>Implemented debugging and data visualization tools to assist gameplay development.</li>
-              <li>Integrated dynamic asset loading in different systems of the game to reduce memory usage.</li>
-              <li>Collaborated with the art department in the integration of assets into the game.</li>
-              <li>Identified and fixed critical issues such as crashes, non-progressions, and memory optimization to improve game stability and performance.</li>
-            </ul>
           </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">Spanish Safari</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/DJ0CLZBS6KI" allowfullscreen></iframe>
+          <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/groovity.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Groovity (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://store.steampowered.com/app/3587530/Groovity/" class="btn btn-primary">Steam</a>
+              </div>
             </div>
-            <p>Spanish Safari is an app that helps children to learn and practice Spanish.</p>
-            <ul>
-              <li>Developed more than 20 different educational mini-games.</li>
-              <li>Refactored mini-games code architecture to improve maintainability and reduce the development time of new mini-games and variations.</li>
-              <li>Worked closely with the art department to integrate assets, configure character animations, and implement visual effects.</li>
-              <li>Extended the visual scripting tools used to develop in-game cutscenes by implementing custom nodes for frequent actions.</li>
-            </ul>
           </div>
-          <div class="row mb-3">
-            <h3>Prototypes</h3>
-          </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">Ultimate Kingdom Battle</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/eGO_xJNfqR8" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/human101.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Human 101 (2023)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://www.youtube.com/watch?v=ueC0C0Hr4ek" class="btn btn-primary">Gameplay Video</a>
+              </div>
             </div>
-            <p>This is a competitive action strategy game inspired by the duel mode from Mario Party 3. Currently in development.</p>
           </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">Human 101</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/D0Rkr09eudg" allowfullscreen></iframe>
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/nfl.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">NFL Clash (2021)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://www.youtube.com/watch?v=yBV4d7btZy0" class="btn btn-primary">Gameplay Video</a>
+              </div>
             </div>
-            <p>This game reworks mini-games from fake mobile game ads (plus some original ones) and puts them in the WarioWare format.</p>
-            <ul>
-              <li>Implemented reusable components with generic actions to facilitate the creation of different mini-games such as object spawning, health, movement, and projectiles.</li>
-              <li>Added input handling for multiple devices: gamepad, keyboard, mouse, touchscreen.</li>
-              <li>Architected the split-screen multiplayer.</li>
-              <li>Integrated FMOD engine and music assets.</li>
-            </ul>
           </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">Insanus</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/4XIL2jEHxJo" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Game Jam Projects</h4>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/bignanny.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Big Nanny is Watching (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://paxcu.itch.io/big-nanny-is-watching" class="btn btn-primary">Play</a>
+              </div>
             </div>
-            <p>Insanus is a mental hospital tycoon game.</p>
-            <ul>
-              <li>Developed a room-building system with placement, preview, rotation, and destruction actions.</li>
-              <li>Implemented AI for different character archetypes, including pathfinding, navigation, and interactions with the environment.</li>
-            </ul>
           </div>
-          <div class="row mb-3">
-            <h3>Experiments</h3>
+          <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/gou.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gōu (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://paxcu.itch.io/gou" class="btn btn-primary">Play</a>
+              </div>
+            </div>
           </div>
-          <div class="row mb-3">
-            <h4 class="fw-bold text-primary">UE5 3D Platformer</h4>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/c_o7gS6-Lsk" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/beatthecostume.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Beat the Costume! (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://aemc64.itch.io/beat-the-costume" class="btn btn-primary">Play</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="ratio ratio-16x9">
+                <video autoplay loop muted playsinline>
+                  <source src="assets/videos/towerofbubble.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tower of Bubble (2025)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="https://german-gabari-llorens.itch.io/tower-of-bubble" class="btn btn-primary">Play</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="pb-3 my-4"></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
   </body>
 </html>
