@@ -3,7 +3,7 @@
 **Repo:** `aemc64/aemc64.github.io` · **Live:** https://aemc64.github.io
 **Goal:** turn the site into a simple, clean **project showcase** — not a copy of the résumé.
 **Status:** implemented on branch `redesign` (2026-11-19), not merged, not pushed.
-Two jam clips are placeholders until footage is recorded.
+Two jam cards use gameplay stills until footage is recorded.
 
 ---
 
@@ -339,16 +339,16 @@ Verified on `dragonfire.mp4`: **8.7 MB → 286 KB** at 640 px, a 30× reduction.
 
 - [x] Re-encode 12 clips (4 × 960 px / 8 × 640 px, audio stripped, faststart) — **113 MB → 5.7 MB**
 - [x] Poster frames picked from three candidates per clip
-- [x] 14 posters exported; designed placeholders for the two without footage
+- [x] 14 posters exported; supplied stills for the two without footage
 - [x] `ffprobe` audit: 960×540 / 640×360, 30 fps, no audio stream
 - [ ] **Capture `overlook-inn` and `between-the-canvases`** (yours)
-- [ ] Swap the placeholder `<img>` for the `<video data-preview>` block in both jam cards
+- [ ] Swap the still `<img>` for the `<video data-preview>` block in both jam cards
 
 ### Phase 2 — Page shell — done
 
 - [x] `assets/css/site.css` (~380 lines, custom properties, no framework)
 - [x] Bootstrap CSS/JS, Popper and the unused local copy removed
-- [x] Header + hero with a general experience paragraph; contact links split, each shown once
+- [x] Header + hero with a general experience paragraph; all contact links in the header, footer is copyright
 - [x] **Shipped** section: Dragonfire + NFL Clash
 - [x] **Demos & vertical slices** section: Groovity + Human 101
 - [x] `<details>` expanders, keyboard-operable, no JS
@@ -446,8 +446,11 @@ explicitly avoids.
   no notes repeating the card meta, and every jam link now reads "Play on itch.io".
 - **2026-11-19 (structure pass)** — Dropped the four one-line summaries that repeated the
   "What I worked on" bullets, restored the longer game descriptions, and brought back a general
-  experience paragraph in the hero. Contact links no longer repeat: header has Email and LinkedIn,
-  footer has itch.io and Résumé, and the hero has no buttons.
+  experience paragraph in the hero. Contact links no longer repeat: header has Email, LinkedIn,
+  itch.io and Résumé, and the footer is only the copyright.
+- **2026-11-19 (stills)** — Added the supplied gameplay stills for Between the Canvases and
+  Overlook Inn, replacing the generated placeholder art. Between the Canvases now comes first,
+  as the most recent jam. The cards keep a "Video coming soon" badge until footage exists.
 - **2026-11-19** — Corrected tiering after status review: Groovity and Human 101 are vertical
   slices, not commercial releases. Featured tier reduced from 3 to 2 (Dragonfire, NFL Clash); added
   a `Shipped / Vertical slice / Game jam` status vocabulary and a "do not blur status" rule.
