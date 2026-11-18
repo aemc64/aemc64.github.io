@@ -174,10 +174,11 @@ Ten jam cards is what sets the floor, not the tiering — four rows of cards at 
 ```
 [ media: 16:9, poster → preview on hover/tap ]
 Title (year)
-Status · Role · team size          ← e.g. "Shipped · Client Engineer · WB Games"
-One sentence: what the player does
-One line: the system I built that mattered   ← bolded
-Unity · C# · Addressables                     Play the demo ↗
+Role · studio                      ← e.g. "Client Engineer · WB Games"
+Two sentences: what the game is
+Tech line
+▸ What I worked on (main cards only)
+CTA
 ```
 
 | Tier | Layout | Media | Expander |
@@ -188,23 +189,20 @@ Unity · C# · Addressables                     Play the demo ↗
 
 Rules:
 - **No badges.** Tech is one line of muted text, separated by `·`.
-- **Status word on every card.** `Shipped` / `Vertical slice` / `Game jam · Global Game Jam`.
-- **One primary link** plus at most one secondary. CTA verb matches status (§4).
-- Shipped and slice cards add `▸ How it works` — a native `<details>` with 3 bullets and one
-  screenshot or a small systems diagram.
+- **Status lives in the section heading.** `Shipped` / `Demos & vertical slices` / `Game jam projects`
+  are what tell the reader which tier a card is in.
+- **One primary link.** Every jam card uses the same label, `Play on itch.io`.
+- Shipped and slice cards add `▸ What I worked on` — a native `<details>` with the contribution list.
+- **No separate summary line above the expander.** It repeated the bullets. The expander is the
+  contribution record; the description stays on the game.
 - Jam cards have no expander. Hovering the media previews the clip; the whole card is not a link,
   the button is.
 - Equal-height cards per row (`height: 100%` on the card, `align-items: stretch`).
 
-### The bolded line is the point
+### The description carries the game
 
-That single sentence is what separates a showcase from a list. Compare:
-
-- ❌ `Tile Map Systems · Army & Marches · Combat Visualization`
-- ✅ **Built the tile-map layer that streams 400×400 maps and drives army marches, POI placement,
-  and combat visualization.**
-
-Rules for drafting (§7): specific, first person, no invented metrics.
+The card text says what the game is; the expander says what I built. Do not duplicate the bullet
+list in a one-line summary. Draft descriptions from the old site, trimmed of editorial asides.
 
 ---
 
@@ -214,13 +212,12 @@ Draft every card's fields from existing card text, then hand over for edits.
 
 | Field | Source | Owner |
 | --- | --- | --- |
-| Status word | §4 table (verified against store pages) | me |
-| One sentence (what the player does) | existing card text, trimmed | me → you approve |
-| **The system line** | existing "Contributions" badges, rewritten | me drafts, **you verify** |
+| Section heading (status) | §4 table (verified against store pages) | me |
+| Description (what the game is) | old card text, trimmed | me → you approve |
 | Tech line | existing "Tools" badges, cut to 3–4 | me |
-| Role · team · studio | existing + itch/Steam pages | me |
-| `How it works` bullets | needs your input | **you** |
-| Hero sentence | draft | you approve |
+| Role · studio | existing + itch/Steam pages | me |
+| `What I worked on` bullets | existing "Contributions" badges | me → **you verify** |
+| Hero paragraph | old site, rewritten as general experience | you approve |
 
 **Constraint:** I will not invent numbers. If a line needs "60 fps on low-end Android" or
 "400×400 maps", you supply it or the number comes out. Vague is better than fabricated on a
@@ -351,7 +348,7 @@ Verified on `dragonfire.mp4`: **8.7 MB → 286 KB** at 640 px, a 30× reduction.
 
 - [x] `assets/css/site.css` (~380 lines, custom properties, no framework)
 - [x] Bootstrap CSS/JS, Popper and the unused local copy removed
-- [x] Header + hero, one sentence, two CTAs
+- [x] Header + hero with a general experience paragraph; contact links split, each shown once
 - [x] **Shipped** section: Dragonfire + NFL Clash
 - [x] **Demos & vertical slices** section: Groovity + Human 101
 - [x] `<details>` expanders, keyboard-operable, no JS
@@ -447,6 +444,10 @@ explicitly avoids.
 - **2026-11-19 (copy pass)** — Cut restated claims, editorial asides and the mixed jam-button
   labels: no em dashes in visible copy, no "two shipped titles" line above a Shipped section,
   no notes repeating the card meta, and every jam link now reads "Play on itch.io".
+- **2026-11-19 (structure pass)** — Dropped the four one-line summaries that repeated the
+  "What I worked on" bullets, restored the longer game descriptions, and brought back a general
+  experience paragraph in the hero. Contact links no longer repeat: header has Email and LinkedIn,
+  footer has itch.io and Résumé, and the hero has no buttons.
 - **2026-11-19** — Corrected tiering after status review: Groovity and Human 101 are vertical
   slices, not commercial releases. Featured tier reduced from 3 to 2 (Dragonfire, NFL Clash); added
   a `Shipped / Vertical slice / Game jam` status vocabulary and a "do not blur status" rule.

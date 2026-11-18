@@ -161,13 +161,6 @@ a:hover { color: #8ad6ff; }
   color: var(--text-soft);
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-  margin-top: 1.9rem;
-}
-
 /* ---------- sections ---------- */
 
 .section { margin-top: clamp(2.5rem, 5vw, 3.75rem); }
@@ -296,14 +289,6 @@ a:hover { color: #8ad6ff; }
   margin: 0;
   color: var(--text-soft);
   font-size: .93rem;
-}
-
-.card__system {
-  margin: .15rem 0 0;
-  padding-left: .75rem;
-  border-left: 2px solid var(--accent);
-  font-size: .9rem;
-  color: var(--text);
 }
 
 .card__tech,
