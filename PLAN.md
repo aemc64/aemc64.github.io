@@ -161,7 +161,7 @@ before they click anything.
 └──────────────────────────────────────────────────────────┘
 ```
 
-Target height: **~3,900 px** (from 4,473). Initial weight: **~500 KB** (from 113 MB).
+Target height: **~3,600 px** (from 4,473). Initial weight: **~460 KB** (from 113 MB).
 
 Ten jam cards is what sets the floor, not the tiering — four rows of cards at three per row.
 
@@ -335,7 +335,7 @@ Verified on `dragonfire.mp4`: **8.7 MB → 286 KB** at 640 px, a 30× reduction.
 - [x] Groovity: master's project, final build, no further development → stated on the card
 - [x] Human 101: Onion Head Games was a small indie studio Andrés co-founded; it no longer exists → stated on the card
 - [x] Résumé: stays on Google Drive
-- [x] Credits: "team of 7" where known
+- [x] Credits: jam cards name the jam only; no team-size line
 - [x] Dates: year only
 
 ### Phase 1 — Assets — done, two clips outstanding
@@ -380,9 +380,9 @@ Verified on `dragonfire.mp4`: **8.7 MB → 286 KB** at 640 px, a 30× reduction.
 | Lighthouse accessibility | **1.00** (was 0.84) |
 | Lighthouse best practices | **1.00** |
 | Lighthouse SEO | **1.00** (was 0.75) |
-| Initial transfer | **494 KB** (was ~113 MB) |
+| Initial transfer | **462 KB** (was ~113 MB) |
 | `.mp4` requests before interaction | **0** |
-| Page height | 3,939 px (was 4,473) |
+| Page height | 3,593 px (was 4,473) |
 | Horizontal overflow | none at 320 / 375 / 768 |
 | Columns | 1 / 1 / 2 (3-up ≥ 993 px) |
 | Keyboard | skip link → header → cards; expanders open with Enter |
@@ -443,7 +443,10 @@ explicitly avoids.
 - **2026-11-19 (implementation)** — Built the tiered showcase on branch `redesign`: hand-written
   CSS replaces Bootstrap, 12 clips re-encoded (113 MB → 5.7 MB), posters and placeholders generated,
   preview script added, metadata/OG/favicon/sitemap/404 added. Lighthouse accessibility 0.84 → 1.00,
-  SEO 0.75 → 1.00, initial transfer 113 MB → 494 KB.
+  SEO 0.75 → 1.00, initial transfer 113 MB → 462 KB.
+- **2026-11-19 (copy pass)** — Cut restated claims, editorial asides and the mixed jam-button
+  labels: no em dashes in visible copy, no "two shipped titles" line above a Shipped section,
+  no notes repeating the card meta, and every jam link now reads "Play on itch.io".
 - **2026-11-19** — Corrected tiering after status review: Groovity and Human 101 are vertical
   slices, not commercial releases. Featured tier reduced from 3 to 2 (Dragonfire, NFL Clash); added
   a `Shipped / Vertical slice / Game jam` status vocabulary and a "do not blur status" rule.

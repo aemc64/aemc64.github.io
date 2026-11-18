@@ -1,4 +1,4 @@
-/* Andrés Mayo — portfolio
+/* Andrés Mayo · portfolio
    Hand-written, no framework. Single page, dark, media-first. */
 
 :root {
@@ -168,12 +168,6 @@ a:hover { color: #8ad6ff; }
   margin-top: 1.9rem;
 }
 
-.hero-meta {
-  margin: 1.6rem 0 0;
-  color: var(--muted);
-  font-size: .86rem;
-}
-
 /* ---------- sections ---------- */
 
 .section { margin-top: clamp(2.5rem, 5vw, 3.75rem); }
@@ -250,7 +244,7 @@ a:hover { color: #8ad6ff; }
 .card__play::before { content: "▶"; margin-left: 3px; }
 .card__media.is-playing .card__play::before { content: "❚❚"; margin-left: 0; font-size: .8rem; }
 
-/* touch devices have no hover — give them an explicit control */
+/* touch devices have no hover: give them an explicit control */
 @media (hover: none) {
   .card__play { display: grid; }
 }
@@ -312,7 +306,8 @@ a:hover { color: #8ad6ff; }
   color: var(--text);
 }
 
-.card__tech {
+.card__tech,
+.card__note {
   margin: 0;
   color: var(--muted);
   font-size: .8rem;
@@ -367,13 +362,6 @@ a:hover { color: #8ad6ff; }
   font-size: .86rem;
 }
 
-.expander .note {
-  margin: .7rem 0 0;
-  color: var(--muted);
-  font-size: .82rem;
-  font-style: italic;
-}
-
 /* ---------- footer ---------- */
 
 .site-footer {
@@ -390,6 +378,7 @@ a:hover { color: #8ad6ff; }
   align-items: baseline;
   justify-content: space-between;
 }
+.site-footer p { margin: 0; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; }
 .site-footer a { color: var(--text-soft); text-decoration: none; }
 .site-footer a:hover { color: var(--text); text-decoration: underline; }
