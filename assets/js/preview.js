@@ -6,12 +6,26 @@
   const cards = [...document.querySelectorAll("[data-preview]")];
   let current = null;
 
+  function setButton(card, playing) {
+    const button = card.querySelector(".card__play");
+    if (!button) return;
+    if (!button.dataset.label) {
+      button.dataset.label = button.getAttribute("aria-label") || "Preview";
+    }
+    const base = button.dataset.label;
+    button.setAttribute(
+      "aria-label",
+      playing ? base.replace(/^Play a preview of/, "Pause preview of") : base
+    );
+  }
+
   function start(card) {
     const video = card.querySelector("video");
     if (!video) return;
     if (current && current !== card) stop(current);
     if (!video.getAttribute("src")) video.setAttribute("src", video.dataset.src);
     card.classList.add("is-playing");
+    setButton(card, true);
     const p = video.play();
     if (p && p.catch) p.catch(() => {});
     current = card;
@@ -22,6 +36,7 @@
     if (!video) return;
     video.pause();
     card.classList.remove("is-playing");
+    setButton(card, false);
     if (current === card) current = null;
   }
 
